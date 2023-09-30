@@ -21,7 +21,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 		let window = UIWindow(windowScene: windowScene)
 		self.window = window
 		
-		let viewController = WeatherSearchViewController()
+		// Given more time I'd most likely use a Coordinator which would handle creating and passing in the dependencies.
+		let viewController = WeatherDisplayViewController(viewModel: WeatherDisplayViewModel())
 		window.rootViewController = UINavigationController(rootViewController: viewController)
 		
 		window.makeKeyAndVisible()

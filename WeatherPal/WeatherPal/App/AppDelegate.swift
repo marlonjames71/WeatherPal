@@ -14,6 +14,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		// Override point for customization after application launch.
+		
+		// Making sure decoding works
+#if DEBUG
+		let jsonData = WeatherResult.mockData.data(using: .utf8)!
+		let result = try! JSONDecoder().decode(WeatherResult.self, from: jsonData)
+		print("\(#file) – Testing decoding...\n\nDecoded Mock Data:\n\(result)")
+#endif
+		
 		return true
 	}
 	
