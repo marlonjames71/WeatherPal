@@ -4,23 +4,31 @@ Search any city and get the weather for that city.
 ---
 
 ### Weather Display Portrait Mode
-<p align="center">
-  <img src="weatherPortrait.png" alt="Image of an iPhone app in portrait mode." width="500" />
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="/weatherPortrait.png">
+  <source media="(prefers-color-scheme: light)" srcset="/weatherPortrait-light.png">
+  <img alt="Image of an iPhone app in portrait mode." src="/DropdownMenu-light.png" width="500">
+</picture>
 
 ### Weather Display Landscape Mode
-<p align="center">
-  <img src="weatherLandscape.png" alt="Image of an iPhone app in landscape mode."/>
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="/weatherLandscape.png">
+  <source media="(prefers-color-scheme: light)" srcset="/weatherLandscape-light.png">
+  <img alt="Image of an iPhone app in landscape mode." src="/weatherLandscape-light.png">
+</picture>
 
 ---
 
 ### Weather Search Portrait Mode
-<p align="center">
-  <img src="weatherSearchPortrait.png" alt="Image of an iPhone app in portrait mode." width="500" />
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="/weatherSearchPortrait.png">
+  <source media="(prefers-color-scheme: light)" srcset="/weatherSearchPortrait-light.png">
+  <img alt="Image of an iPhone app in portrait mode." src="/weatherSearchPortrait-light.png" width="500">
+</picture>
 
 ### Weather Search Landscape Mode
-<p align="center">
-  <img src="weatherSearchLandscape.png" alt="Image of an iPhone app in landscape mode."/>
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="/weatherSearchLandscape.png">
+  <source media="(prefers-color-scheme: light)" srcset="/weatherSearchLandscape-light.png">
+  <img alt="Image of an iPhone app in landscape mode." src="/weatherSearchLandscape-light.png">
+</picture>
